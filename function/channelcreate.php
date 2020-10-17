@@ -7,7 +7,7 @@
 			$channelClientList = self::$tsAdmin->getElement('data', self::$tsAdmin->channelClientList($this->config['functions_ChannelCreate']['cid'], "-ip -uid"));
 			if(!empty($channelClientList)){
 				foreach($channelClientList as $ccl){
-					if(!empty(array_intersect(explode(',', $ccl['client_servergroups']), $this->config['functions_ChannelCreate']['cid'])) || empty($this->config['functions_ChannelCreate']['cid'])){
+					if(!empty(array_intersect(explode(',', $ccl['client_servergroups']), $this->config['functions_ChannelCreate']['cgid'])) || empty($this->config['functions_ChannelCreate']['cgid'])){
 						$count = 0;
 						$query = self::$db->query("SELECT COUNT(id) AS `count`, `cid` FROM `channel` WHERE `cldbid` = {$ccl['client_database_id']} GROUP BY `id`");
 						while($row = $query->fetch()){
@@ -42,7 +42,7 @@
 									}
 								}	
 							} catch (PDOException $e) {
-								$this->log(1, $e->getMessage());
+								$this->bot->log(1, $e->getMessage());
 							}
 							if($limit_ip == 0){
 								$zalozony = 0;
@@ -138,8 +138,8 @@
 							self::$tsAdmin->clientPoke($ccl['clid'], self::$l->error_has_a_channel_ChannelCreate);
 						}
 					}else{
-						self::$tsAdmin->clientKick($ccl['clid'], 'channel', 'Nie posiadasz wymaganej grupy do założenia kanału');
-						self::$tsAdmin->clientPoke($ccl['clid'], 'Nie posiadasz wymaganej grupy do założenia kanału');
+						self::$tsAdmin->clientKick($ccl['clid'], 'channel', self::$l->error_no_group_ChannelCreate);
+						self::$tsAdmin->clientPoke($ccl['clid'], self::$l->error_no_group_poke_ChannelCreate);
 
 					}
 				}

@@ -139,18 +139,17 @@
 				$txt_time,
 				date('H:i'),
 				date('d.m.Y'),
-				$topc,
-				$connections,
-				$topa,
-				$time_activity,
-				$toplc,
-				$longest_connection,
-				$topl,
-				$lvl,
-				$exp
+				$topc ?? 'b/d',
+				$connections ?? 'b/d',
+				$topa ?? 'b/d',
+				$time_activity ?? 'b/d',
+				$toplc ?? 'b/d',
+				$longest_connection ?? 'b/d',
+				$topl ?? 'b/d',
+				$lvl ?? 'b/d',
+				$exp ?? 'b/d'
 			];
 			return str_replace($search, $replace, $messege);
-
 		}
 	}
 

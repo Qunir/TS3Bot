@@ -19,6 +19,8 @@
 	$lang['error_has_a_channel_ChannelCreate'] = "Masz już kanał";
 	$lang['error_limit_channels_on_ip_ChannelCreate'] = "Limit kanałów na to IP został przekroczony:)";
 	$lang['error_has_a_channel_poke_ChannelCreate'] = "Limit kanałów na to IP został przekroczony:)";
+	$lang['error_no_group_ChannelCreate'] = "Nie posiadasz wymaganej grupy do założenia kanału";
+	$lang['error_no_group_poke_ChannelCreate'] = "Nie posiadasz wymaganej grupy do założenia kanału";
 
 	//clearImg();
 	$lang['success_edit_description_ClearImg'] = "Zdjęcie zostało usunięte";
@@ -69,8 +71,23 @@
 	$lang['kick_SprNick'] = "Prosimy o zmianę nicku. Dziękujemy.";
 
 	//StatusTwitch()
-	$lang['online_StatusTwitch'] = "[center][img]{6}[/img][/center]\n[size=14][COLOR=#4b367c]Nazwa:[/color] [URL={1}][color=#00aa00]{2}[/color][/URL]\n[COLOR=#4b367c]Status:[/color] [color=#00aa00]Online[/color]\n[COLOR=#4b367c]Obecna gra:[/color] {3}\n[COLOR=#4b367c]Tytuł:[/color] {4}\n[COLOR=#4b367c]Oglądających:[/color] {5}";
-	$lang['offline_StatusTwitch'] = "[center][img]{2}[/img][/center]\n[size=14][COLOR=#4b367c]Nazwa:[/color] [URL=https://www.twitch.tv/{1}][color=#00aa00]{1}[/color][/URL]\n[COLOR=#4b367c]Status:[/color] [color=#ff0000]Offline[/color][/size]";
+	$lang['online_StatusTwitch'] = "[center][img]{1}[/img][/center]
+	[COLOR=#4b367c]Nazwa:[/color] [URL={2}][color=#00aa00]{3}[/color][/URL]
+	[COLOR=#4b367c]Obecna gra:[/color] {4}
+	[COLOR=#4b367c]Tytuł:[/color] {5}
+	[COLOR=#4b367c]Oglądających:[/color] {6}
+	[COLOR=#4b367c]Uptime:[/color] {7}
+	[COLOR=#4b367c]Obserwujący:[/color] {8}
+
+	[center]Emotki[/center]
+	{9}
+	";
+	$lang['offline_StatusTwitch'] = "[center][img]{1}[/img][/center]
+	[COLOR=#4b367c]Nazwa:[/color] [URL={2}][color=#00aa00]{3}[/color][/URL]
+	[COLOR=#4b367c]Obserwujący:[/color] {4}
+
+	[center]Emotki[/center]
+	{5}";
 
 	//StatusYt()
 	$lang['channel_description_StatusYt'] = "[center][img]{6}[/img][/center]\n[size=14][color=#ff0000]Nazwa:[/color] [URL=https://www.youtube.com/channel/{1}]{2}[/URL]\n[color=#ff0000]Subskrypcji:[/color] {3}\n[color=#ff0000]Wyświetlenia:[/color] {4}\n[color=#ff0000]Opis:[/color] {5}[/size]";

@@ -1,4 +1,9 @@
 # Changelog
+## [4.1.7] - 17.10.2020
+* Naprawa funkcji statusTwitch(), oraz usprawnienie.
+* Naprawa błędu w channelCreate().
+* Naprawa błędu w welcomeMessege().
+
 ## [4.1.6] - 28.06.2020
 * Optymalizacja funkcji Lvl() od teraz zapytanie do bazy wykonuje się raz na minute.
 * Zmiany w funkcji welcomeMessege() od teraz można użyć większej ilości zmiennych które są opisane w configu.

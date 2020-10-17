@@ -25,7 +25,7 @@
 
 		'bot' => [
 		
-			'ver'	=> '414'	//Wersja bota.	
+			'ver'	=> '417'	//Wersja bota.	
 		
 		],
 
@@ -425,6 +425,8 @@
 		'functions_StatusTwitch' => [
 			'on'		=> false,	//true - włączona false - wyłączona
 			'inst'		=> 2, //ID Instancji 
+			'apikay'	=> '', //Klucz API uzyskasz go na  https://dev.twitch.tv/console/apps
+			'secret'	=> '', //Hasło klienta uzyskasz je na  https://dev.twitch.tv/console/apps wchodząc w zarządzanie aplikacją.
 			'cid_name'	=> [
 				1 => [	//ID kanału w którym ma ustawiać opis oraz nazwę.
 					'users' => 'kayser',	//Nick osoby na twitchu.
