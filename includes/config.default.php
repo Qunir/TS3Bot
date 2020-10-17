@@ -25,7 +25,11 @@
 
 		'bot' => [
 		
+<<<<<<< HEAD
 			'ver'	=> '417'	//Wersja bota.	
+=======
+			'ver'	=> '416'	//Wersja bota.	
+>>>>>>> 5ca3134b95c8367dc722132c740d93aa65012bcb
 		
 		],
 
