@@ -15,7 +15,6 @@
 				if($row['count'] == 0){
 					$query3 = Bot::$db->query("SELECT COUNT(id) AS `count` FROM `channel` WHERE `cid` = {$cid}");
 					while($row3 = $query3->fetch()){
-						echo $row3['count'];
 						if($row3['count'] != 0){
 							$clientDbInfo = Bot::$tsAdmin->getElement('data', Bot::$tsAdmin->clientDbInfo($cldbid));
 							$clientGetIds = Bot::$tsAdmin->getElement('data', Bot::$tsAdmin->clientGetIds($clientDbInfo['client_unique_identifier']));

@@ -74,6 +74,17 @@
 	$lang['list_of_commands_help'] = "Lista dostępnych komend dla Ciebie\n\{1}";
 	$lang['error_no_description_help'] = "Brak opisu.";
 	$lang['error_no_syntax_help'] = "(Brak składni).";
+
+//kobieta.php
+	$lang['success_add_group_kobieta'] = "UDAŁO SIĘ! Od teraz jesteś zarejestrowana :)";
+	$lang['error_it_has_group_kobieta'] = "Ej jesteś już zarejestrowana";
+	$lang['error_it_has_group_m_kobieta'] = "Posiadasz inną grupę która blokuje możliwość Twojej rejestracji :)";
+
+//mezczyzna.php
+	$lang['success_add_group_mezczyzna'] = "UDAŁO SIĘ! Od teraz jesteś zarejestrowany :)";
+	$lang['error_it_has_group_mezczyzna'] = "Ej jesteś już zarejestrowany";
+	$lang['error_it_has_group_k_mezczyzna'] = "Posiadasz inną grupę która blokuje możliwość Twojej rejestracji :)";
+
 //poke.php
 	$lang['error_give_group_poke'] = "Coś źle podałeś/aś poprawna forma to !poke all lub id grup | Wiadomość.";
 	$lang['error_to_long_poke'] = "Wiadomość jest za długa! Maksymalnie możesz użyć 100 znaków.";

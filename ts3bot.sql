@@ -93,7 +93,9 @@ INSERT INTO `command` (`id`, `cmd`, `alias`, `staff`, `group`, `description`, `s
 (13, 'adminlog', 'ac', 10, '', 'Komenda wyświetla logi administratora', '!adminlog cdbid/cuid data'),
 (14, 'banhistory', 'bh', 10, '', 'Komenda wyświetla historię banów', '!banhistory ip/uid/cldbid'),
 (15, 'gamble', 'gb', 0, '', 'Komenda pozwala obstawić punkty', '!gamble ilość_pkt|all'),
-(16, 'punkty', 'pkt', 0, '', 'Komenda pozwala sprawdzić ilość punktów', '!punkty');
+(16, 'punkty', 'pkt', 0, '', 'Komenda pozwala sprawdzić ilość punktów', '!punkty'),
+(17, 'kobieta', 'k', 0, '', 'Komenda rejestruje jako kobieta', '!kobieta'),
+(17, 'mezczyzna', 'm', 0, '', 'Komenda rejestruje jako mężczyzna', '!m');
 
 -- --------------------------------------------------------
 

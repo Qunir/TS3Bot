@@ -23,7 +23,7 @@
                             }
                         }
                     }else{
-                        $this->sendMessage($invokerid, Bot::$l->error_limit_givegroup.'2');
+                        $this->sendMessage($invokerid, Bot::$l->error_limit_givegroup);
                     }
                 }else{
                     foreach($this->configcmd['functions_givegroup']['limit'] as $value){
@@ -32,7 +32,7 @@
                                 $serverGroupAddClient = Bot::$tsAdmin->serverGroupAddClient($gid, $clientInfo['client_database_id']);
                                 $this->sendMessage($invokerid, Bot::$l->success_add_group_givegroup);
                             }else{
-                                $this->sendMessage($invokerid, Bot::$l->error_limit_givegroup.'3');
+                                $this->sendMessage($invokerid, Bot::$l->error_limit_givegroup);
                             }
                             break;
                         }

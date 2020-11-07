@@ -72,15 +72,15 @@
 
 	//StatusTwitch()
 	$lang['online_StatusTwitch'] = "[center][img]{1}[/img][/center]
-	[COLOR=#4b367c]Nazwa:[/color] [URL={2}][color=#00aa00]{3}[/color][/URL]
-	[COLOR=#4b367c]Obecna gra:[/color] {4}
-	[COLOR=#4b367c]Tytuł:[/color] {5}
-	[COLOR=#4b367c]Oglądających:[/color] {6}
-	[COLOR=#4b367c]Uptime:[/color] {7}
-	[COLOR=#4b367c]Obserwujący:[/color] {8}
+[COLOR=#4b367c]Nazwa:[/color] [URL={2}][color=#00aa00]{3}[/color][/URL]
+[COLOR=#4b367c]Obecna gra:[/color] {4}
+[COLOR=#4b367c]Tytuł:[/color] {5}
+[COLOR=#4b367c]Oglądających:[/color] {6}
+[COLOR=#4b367c]Uptime:[/color] {7}
+[COLOR=#4b367c]Obserwujący:[/color] {8}
 
-	[center]Emotki[/center]
-	{9}
+[center]Emotki[/center]
+{9}
 	";
 	$lang['offline_StatusTwitch'] = "[center][img]{1}[/img][/center]
 	[COLOR=#4b367c]Nazwa:[/color] [URL={2}][color=#00aa00]{3}[/color][/URL]

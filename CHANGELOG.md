@@ -1,4 +1,11 @@
 # Changelog
+## [4.1.8] - 07.11.2020
+* Dodanie komendy !kobieta i !mezczyzna, która słóży do rejestracji.
+* Dodanie opcji status do ./start.sh, która pozwala nam sprawdzić które boty są odpalone.
+* Naprawa błędów.
+
+Aby zaktualizować bota należy użyć ./start.sh update, żeby dodać komendy do bazy oraz zaktualizować config_cmd.php.
+
 ## [4.1.7] - 17.10.2020
 * Naprawa funkcji statusTwitch(), oraz usprawnienie.
 * Naprawa błędu w channelCreate().

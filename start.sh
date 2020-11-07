@@ -75,6 +75,24 @@
 		text "32;01m" "Pomyslnie uruchomiono bota nr 3!"
 	}
 
+	function status {
+		if ! screen -list | grep -q "botphp1"; then
+			text "32;02m" "Bot nr 1 nie jest uruchomiony!"
+		else
+			text "31;01m" "Bot nr 1 jest uruchomiony!"
+		fi
+		if ! screen -list | grep -q "botphp2"; then
+			text "32;02m" "Bot nr 2 nie jest uruchomiony!"
+		else
+			text "31;01m" "Bot nr 2 jest uruchomiony!"
+		fi
+		if ! screen -list | grep -q "botphp3"; then
+			text "32;02m" "Bot nr 3 nie jest uruchomiony!"
+		else
+			text "31;01m" "Bot nr 2 jest uruchomiony!"
+		fi
+	}
+
 	function update {
 		php install/upgrade.php
 	}
@@ -107,12 +125,16 @@
 			restart
 		;;
 
+		"status")
+			status
+		;;
+
 		"update")
 			update
 		;;
 
 		*)
-			echo -e 'Uzyj start | stop | restart'
+			echo -e 'Uzyj start | stop | restart | status | update'
 		;; 
 	esac
 

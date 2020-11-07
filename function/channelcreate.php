@@ -4,7 +4,7 @@
 
 		public function execute(): void
 		{
-			$channelClientList = self::$tsAdmin->getElement('data', self::$tsAdmin->channelClientList($this->config['functions_ChannelCreate']['cid'], "-ip -uid"));
+			$channelClientList = self::$tsAdmin->getElement('data', self::$tsAdmin->channelClientList($this->config['functions_ChannelCreate']['cid'], "-ip -uid -groups"));
 			if(!empty($channelClientList)){
 				foreach($channelClientList as $ccl){
 					if(!empty(array_intersect(explode(',', $ccl['client_servergroups']), $this->config['functions_ChannelCreate']['cgid'])) || empty($this->config['functions_ChannelCreate']['cgid'])){

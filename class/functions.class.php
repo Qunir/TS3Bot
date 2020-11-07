@@ -125,7 +125,7 @@
 			$targetmode = $readChatMessage['targetmode'];
 			$wiadomosci = $readChatMessage['msg'];
 			if(!empty($wiadomosci)){
-				if($wiadomosci{0} == '!' || $wiadomosci{0} == '.') {
+				if(substr($wiadomosci, 0, 1) == '!' || substr($wiadomosci, 0, 1) == '.') {
 					$msg = explode(' ', $wiadomosci);
 					$command = str_replace([ '.', '!' ], '', strtolower($msg[0]));
 					try{
@@ -247,7 +247,7 @@
 		 * @param string $invokerid
 		 * @param string $invokeruid
 		 * @param string $staff
-		 * @param int $group
+		 * @param array $group
 		 * @author	Majcon
 		 * @return	void
 		 **/
@@ -362,7 +362,7 @@
 		public function register(): void
 		{
 			$listOfUser = [];
-			foreach($this->getClientList() as $cl) {
+			foreach(Bot::getClientList() as $cl) {
 				if($cl['client_type'] == 0) {
 					$listOfUser[] = $cl['clid'];
 				}
@@ -422,16 +422,7 @@
 									$longest_connection = $row['longest_connection'];
 									$count = $row['count'];
 								}
-								if(empty($count)){
-									$prepare = Bot::$db->prepare("INSERT INTO `users` (`cldbid`, `client_nickname`, `cui`, `last_activity`, `regdate`, `gid`) VALUES (:cldbid, :client_nickname, :cui, :last_activity, :regdate, :gid)");
-									$prepare->bindValue(':cldbid', $cl['client_database_id'], PDO::PARAM_INT);
-									$prepare->bindValue(':client_nickname', $cl['client_nickname'], PDO::PARAM_STR);
-									$prepare->bindValue(':cui', $cl['client_unique_identifier'], PDO::PARAM_STR);
-									$prepare->bindValue(':last_activity', time(), PDO::PARAM_INT);
-									$prepare->bindValue(':regdate', $clientInfo['client_created'], PDO::PARAM_INT);
-									$prepare->bindValue(':gid', $clientInfo['client_servergroups'], PDO::PARAM_STR);
-									$prepare->execute();
-								}else{
+								if(!empty($count)){
 									if($longest_connection < $clientInfo['connection_connected_time']){
 										$longest_connection = $clientInfo['connection_connected_time'];
 									}
@@ -530,7 +521,7 @@
 				if($data['d'] == 0 && $data['s'] == 0 && $data['i'] == 0 && $data['H'] == 0){
 					$txt_time .= '';
 				}else{
-					$l->time_s1_wyswietl_czas = $this->padding_numbers($data['s'], Bot::$l->time_s1_wyswietl_czas, Bot::$l->time_s2_wyswietl_czas, Bot::$l->time_s3_wyswietl_czas);
+					Bot::$l->time_s1_wyswietl_czas = $this->padding_numbers($data['s'], Bot::$l->time_s1_wyswietl_czas, Bot::$l->time_s2_wyswietl_czas, Bot::$l->time_s3_wyswietl_czas);
 					$txt_time .= $data['s'].' '.Bot::$l->time_s1_wyswietl_czas;
 				}
 			}
