@@ -10,7 +10,7 @@
 	$lang['success_kick_AntyVpn'] = "";
 
 	//BanList();
-	$lang['BanList_row'] = "[COLOR=#ff0000]{1}.)[/COLOR] {2}\n[COLOR=#ff0000]Powód:[/COLOR] {3}\n[COLOR=#ff0000]Bana madał:[/COLOR] {4}\n[COLOR=#ff0000]Ban od:[/COLOR] {5}\n[COLOR=#ff0000]Ban do:[/COLOR] {6}\n";
+	$lang['BanList_row'] = "[COLOR=#ff0000]{1}.)[/COLOR] {2}\n[COLOR=#ff0000]Powód:[/COLOR] {3}\n[COLOR=#ff0000]Bana nadał:[/COLOR] {4}\n[COLOR=#ff0000]Ban od:[/COLOR] {5}\n[COLOR=#ff0000]Ban do:[/COLOR] {6}\n";
 	$lang['BanList_data'] = "[CENTER][SIZE=12][B][COLOR=#55aa00]Lista banów[/COLOR][/B][/SIZE][/CENTER]\n\n{1}";
 	$lang['empty_list_of_bans_BanList'] = "[CENTER][SIZE=12][B][COLOR=#55aa00]Lista banów jest pusta[/COLOR][/B][/SIZE][/CENTER]";
 
