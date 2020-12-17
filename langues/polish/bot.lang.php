@@ -26,8 +26,8 @@
 	$lang['success_edit_description_ClearImg'] = "Zdjęcie zostało usunięte";
 
 	//DdosInfo();
-	$lang['DdosInfo_mess'] = "Wykryto prawdopodobny atak DDoS\nAktualnie wartość pingu: {1}\nAktualna średnia utrata pakietów{2}";
-	$lang['DdosInfo_desc'] = "PING: {1} PAKIETY:{2}";
+	$lang['DdosInfo_mess'] = "Wykryto prawdopodobny atak DDoS\nAktualnie wartość pingu: {1}\nAktualna średnia utrata pakietów {2}";
+	$lang['DdosInfo_desc'] = "PING: {1} PAKIETY: {2}";
 
 	//DelInfoChannel();
 	$lang['DelInfoChannel_row'] = "{1}\n";
