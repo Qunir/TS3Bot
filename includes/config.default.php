@@ -24,7 +24,7 @@
 		],
 
 		'bot' => [
-			'ver'	=> '418',	//Wersja bota.
+			'ver'	=> '419',	//Wersja bota.
 			'language'	=>	'polish'	//Jezyk bota.
 		],
 
